@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0 (Success)
+ *Description: This program will take a random number and display whether it is
+ *positive, negative, or zero.
+ *Return: Returns 0 upon successful run.
  */
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-alert (/q|c/(c));
-putchar(ch);
+if (c == 'e' || c == 'q')
+c++;
+else
+{
+putchar (c);
 }
-putchar('\n');
+}
+putchar ('\n');
 return (0);
 }
