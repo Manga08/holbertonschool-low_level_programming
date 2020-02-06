@@ -3,8 +3,8 @@
 #include <time.h>
 /**
  * main - Entry point
- *
- * Return: Always 1 (Success)
+ * Description: This project is about the last digit of a ramdom number
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
