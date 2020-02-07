@@ -15,13 +15,15 @@ int main(void)
 		for (ch = cho + 1; ch <= 9; ch++)
 		{
 			for (c = ch + 1; c <= 9; c++)
-			putchar(cho + '0');
-			putchar(ch + '0');
-			putchar(c + '0');
-			if (cho < 7)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(cho + '0');
+				putchar(ch + '0');
+				putchar(c + '0');
+				if (cho < 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
