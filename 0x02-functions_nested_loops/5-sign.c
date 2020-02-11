@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *main - Entry point
- *
+ *print_sign - Entry point
+ *@n: tell me the number
  *
  *Return: Returns 0 upon successful run.
  */

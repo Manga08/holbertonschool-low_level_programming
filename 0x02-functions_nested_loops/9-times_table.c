@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *main - Entry point
+ *times_table - Entry point
  *
  *
  *Return: Returns 0 upon successful run.

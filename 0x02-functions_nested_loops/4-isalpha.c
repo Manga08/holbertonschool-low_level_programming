@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *main - Entry point
- *
+ *_isalpha - Entry point
+ *@c: tell the uppercase or lowercase
  *
  *Return: Returns 0 upon successful run.
  */

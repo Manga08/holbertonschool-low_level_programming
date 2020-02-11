@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- *main - Entry point
+ * _islower - Entry point
  *
+ *@c: print the value
  *
  *Return: Returns 0 upon successful run.
  */

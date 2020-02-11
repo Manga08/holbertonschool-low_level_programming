@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 /**
- *main - Entry point
- *
+ *print_to_98 - Entry point
+ *@n: tell me the number to print
  *
  *Return: Returns 0 upon successful run.
  */
