@@ -3,7 +3,7 @@
  *print_alphabet_x10 - Entry point
  *
  *
- *Return: Returns 0 upon successful run.
+ *Return: (0) Always
  */
 void print_alphabet_x10(void)
 {
@@ -13,7 +13,7 @@ void print_alphabet_x10(void)
 	{
 		for (ch = 'a'; ch <= 'z'; ch++)
 		{
-			_putchar(c);
+			_putchar(ch);
 		}
 		_putchar ('\n');
 	}
