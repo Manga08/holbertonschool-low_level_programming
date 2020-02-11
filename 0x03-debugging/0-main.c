@@ -1,10 +1,16 @@
-#include <stdio.h>
+#include "holberton.h"
+
 /**
- * main - Entry point
- *
- * Return: Always 1 (Success)
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
  */
-int _putchar(char c)
+
+int main(void)
 {
-	return (write(1, &c, 1));
+	int i;
+
+	i = 0;
+	positive_or_negative(i);
+
+	return (0);
 }
