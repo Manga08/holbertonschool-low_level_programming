@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 /**
  *print_to_98 - Entry point
@@ -23,7 +23,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (c = n; c < 99; i++)
+		for (c = n; c < 99; c++)
 		{
 			printf("%d", c);
 			if (c != 98)
