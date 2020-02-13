@@ -11,7 +11,7 @@ int main(void)
 	float ch = 1, k = 2, r = 0;
 
 	printf("1, 2");
-	for (c = 1; c <= 96; c++)
+	for (c = 1; c <= 98; c++)
 	{
 		r = ch + k;
 		ch = k;
