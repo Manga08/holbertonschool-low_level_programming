@@ -5,7 +5,7 @@
  *
  *Return: Returns 0 upon successful run.
  */
-void print_numbers(void);
+void print_numbers(void)
 {
 	int c;
 

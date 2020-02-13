@@ -6,7 +6,7 @@
  *@b: pint the value
  *Return: Returns 0 upon successful run.
  */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 return (a * b);
 }
