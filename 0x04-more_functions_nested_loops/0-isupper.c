@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _isupper - Entry point
  *
@@ -6,7 +7,7 @@
  *
  *Return: Returns 0 upon successful run.
  */
-int _isupper(int c);
+int _isupper(int c)
 {
 	if ((c >= 'A') && (c <= 'Z'))
 		return (1);
