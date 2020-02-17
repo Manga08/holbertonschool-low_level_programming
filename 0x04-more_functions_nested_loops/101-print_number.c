@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *print_triangle - Entry point
+ *print_number - Entry point
  *@n: give me teh number
  *
  *Return: (0) Always
