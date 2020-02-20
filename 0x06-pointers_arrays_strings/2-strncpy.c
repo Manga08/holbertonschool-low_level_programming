@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcat - check the code for Holberton School students.
+ * _strncpy - check the code for Holberton School students.
  *@dest: the variable
  *@src: another variable
  *@n: another another variable
