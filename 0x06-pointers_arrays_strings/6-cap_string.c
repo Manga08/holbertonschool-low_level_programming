@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * rev_string - check the code for Holberton School students.
- *@s: the variable
+ * cap_string - check the code for Holberton School students.
+ *@n: the variable
  *Return: always 0
  */
 char *cap_string(char *n)
@@ -23,8 +23,10 @@ char *cap_string(char *n)
 			   (n - 1) == '\)' ||
 			   (n - 1) == '\{' ||
 			   (n - 1) == '\}')
-			   n[c] -= 32;
-			   }
+			{
+				n[c] -= 32;
+			}
 		}
-	return (n);
+		return (n);
 	}
+}
