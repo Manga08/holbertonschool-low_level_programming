@@ -6,6 +6,8 @@
  */
 char *cap_string(char *n)
 {
+	int c = 0;
+
 	for(c = 0; n[c] != '\n'; c++)
 	{
 		if (n[c] >= 'a' && n[c] <= 'z')
