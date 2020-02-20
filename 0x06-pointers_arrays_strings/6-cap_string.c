@@ -8,11 +8,11 @@ char *cap_string(char *n)
 {
 	int c = 0;
 
-	for(c = 0; n[c] != '\n'; c++)
+	for (c = 0; n[c] != '\n'; c++)
 	{
 		if (n[c] >= 'a' && n[c] <= 'z')
 		{
-			if(n[c - 1] == '\n' ||
+			if (n[c - 1] == '\n' ||
 			   n[c - 1] == '\t' ||
 			   n[c - 1] == ' ' ||
 			   n[c - 1] == ',' ||
@@ -31,5 +31,5 @@ char *cap_string(char *n)
 			}
 		}
 	}
-	return(n);
+	return (n);
 }
