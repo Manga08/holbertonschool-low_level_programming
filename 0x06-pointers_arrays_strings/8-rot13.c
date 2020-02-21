@@ -15,7 +15,10 @@ char *rot13(char *n)
 		for (ch = 0; alp[ch] != '\0'; ch++)
 		{
 			if (n[c] == alp[ch])
+			{
 				n[c] = rot[ch];
+				break;
+			}
 		}
 	}
 
