@@ -8,7 +8,7 @@
  {
 	unsigned int c, ch;
 
-	for (c = 0; s < 8; c++)
+	for (c = 0; c < 8; c++)
 	{
 		for (ch = 0; ch < 8; ch++)
 		_putchar(a[c][ch]);
