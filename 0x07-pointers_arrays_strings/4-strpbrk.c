@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
- * _memcpy - check the code for Holberton School students.
- *@src: memory area
- *@dest: another memory area
- *@n: byte form memory aarea of src
+ * _strpbrk - check the code for Holberton School students.
+ *@s: memory area
+ *@accept: another memory area
  *Return: always 0
  */
- #include <stdio.h>
 char *_strpbrk(char *s, char *accept)
 {
     unsigned int c, ch;
