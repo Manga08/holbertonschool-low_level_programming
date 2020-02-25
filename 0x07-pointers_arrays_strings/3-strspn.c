@@ -11,9 +11,9 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (c = 0; s[c]; c++)
 	{
-		for (ch = 0; accept [ch]; ch++)
+		for (ch = 0; accept[ch]; ch++)
 		{
-			if (s[c] == accept [ch])
+			if (s[c] == accept[ch])
 				counter++;
 		}
 		if (counter < c)
