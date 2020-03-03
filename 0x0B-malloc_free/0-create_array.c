@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * create_array - check the code for Holberton School students.
  *@size:The integer
