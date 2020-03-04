@@ -9,38 +9,38 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i = 0, j, longitud = 0, l, k;
-	char *string;
+	int c1 = 0, c2 = 0, c3 = 0, c4 = 0, Long = 0;
+	char *s;
 
 	if (ac == 0 || av == '\0')
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (c1 = 0; c1 < ac; c1++)
 	{
-		j = 0;
-		while (av[i][j] != '\0')
+		c2 = 0;
+		while (av[c1][c2] != '\0')
 		{
-			j++;
+			c2++;
 		}
-		longitud  +=  j + 1;
+		Long  +=  c2 + 1;
 	}
-	string = malloc(sizeof(char) * (longitud + 1));
+	s = malloc(sizeof(char) * (Long + 1));
 
-	if (string == NULL)
+	if (s == NULL)
 	{
 		return (NULL);
 	}
-	longitud = 0;
-	for (k = 0; k < ac; k++)
+	Long = 0;
+	for (c3 = 0; c3 < ac; c3++)
 	{
-		for (l = 0; av[k][l] != '\0'; l++)
+		for (c4 = 0; av[c3][c3] != '\0'; c4++)
 		{
-			*(string + longitud) = av[k][l];
-			longitud++;
+			*(s + Long) = av[c3][c4];
+			Long++;
 		}
-		*(string + longitud) = '\n';
-		longitud++;
+		*(s + Long) = '\n';
+		Long++;
 	}
 
-	return (string);
+	return (s);
 }
