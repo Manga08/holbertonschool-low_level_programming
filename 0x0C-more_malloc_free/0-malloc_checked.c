@@ -2,17 +2,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * argstostr - check the code for Holberton School students.
- *@ac: the variable
- *@av: another variable
+ * malloc_checked - check the code for Holberton School students.
+ *@b: the variable
  *Return: dest
  */
 void *malloc_checked(unsigned int b)
 {
-	void *s;
+	unsigned int *s;
 
 	s = malloc(b);
-	if (str == NULL)
+	if (s == NULL)
+	{
 		exit(98);
+	}
 	return (s);
 }
