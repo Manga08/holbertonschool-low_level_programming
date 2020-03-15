@@ -11,19 +11,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int c;
 
 	if (separator == NULL)
-	{
-		return;
-	}
+		separator = "";
 
 	va_start(data, n);
 
 	for (c = 0; c < n; c++)
 	{
-		printf("%d", va_arg(data, unsigned int));
+		printf("%d", va_arg(data, int));
 		if (n == c + 1)
-		{
-			return;
-		}
+			break;
 		printf("%s", separator);
 	}
 	printf("\n");

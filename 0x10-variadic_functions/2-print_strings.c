@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *string;
 
 	if (separator == NULL)
-		return;
+		separator = "";
 
 	va_start(data, n);
 
@@ -22,11 +22,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (string == NULL)
 		{
 			printf("(nil)");
-			return;
+			break;
 		}
 		printf("%s", string);
 		if (n == c + 1)
-			return;
+			break;
 		printf("%s", separator);
 	}
 	printf("\n");
