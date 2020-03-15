@@ -7,21 +7,25 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int c;
 	va_list data;
+	unsigned int c;
+
+	if (separator == NULL)
+	{
+		return;
+	}
 
 	va_start(data, n);
 
 	for (c = 0; c < n; c++)
 	{
-		printf("%i", va_arg(data, unsigned int));
-		if (c != (n - 1))
+		printf("%d", va_arg(data, unsigned int));
+		if (n == c + 1)
 		{
-			if (separator != NULL)
-				printf ("%s ", separator);
+			return;
 		}
-		else
-			printf("\n");
+		printf("%s", separator);
 	}
+	printf("\n");
 	va_end(data);
 }
