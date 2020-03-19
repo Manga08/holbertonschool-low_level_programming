@@ -2,7 +2,7 @@
 /**
  * print_list - check the code for Holberton School students.
  *@h: the variable
- *Return: null
+ *Return: the counter
  */
 size_t print_list(const list_t *h)
 {
