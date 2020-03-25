@@ -6,14 +6,15 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t size;
+	size_t size = 0;
 	listint_t *temp;
 
 	if (!h || !(*h))
 		return (0);
-
-	for (size = 1; *h; size++)
+	while (*h)
 	{
+		size++;
+
 		if (*h <= (*h)->next)
 		{
 			free(*h);
@@ -25,5 +26,6 @@ size_t free_listint_safe(listint_t **h)
 		free(temp);
 	}
 	*h = NULL;
+
 	return (size);
 }
