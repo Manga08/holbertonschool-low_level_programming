@@ -8,7 +8,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t size;
 
-	for (size = 0; head; size++)
+	for (size = 1; head; size++)
 	{
 		printf("[%p] %d\n", (void *) head, head->n);
 
