@@ -2,7 +2,7 @@
 /**
  * set_bit - check the code for Holberton School students.
  *@n: the variable
- *@indes: the index
+ *@index: the index
  *Return: the counter
  */
 int set_bit(unsigned long int *n, unsigned int index)

@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_binary - check the code for Holberton School students.
- *@head: the variable
+ *@n: the variable
  *Return: the counter
  */
 void print_binary(unsigned long int n)
