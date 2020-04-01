@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * args_error - Print error and exit 97
+ * arg_error - Print error and exit 97
  */
 void arg_error(void)
 {
