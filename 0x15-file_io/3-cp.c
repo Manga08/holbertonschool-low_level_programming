@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
- * args_error - Print error and exit if wrong number of arguments
+ * args_error - Print error and exit 97
  */
-void args_error(void)
+void arg_error(void)
 {
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	exit(97);
 }
 
 /**
- * file_from_error - Print error and exit if file from error
- * @file: The name of the file
+ * file_from_error - Print error and exit 98
+ * @file: The variable
  */
 void file_from_error(char *file)
 {
@@ -19,8 +19,8 @@ void file_from_error(char *file)
 }
 
 /**
- * file_to_error - Print error and exit if file to error
- * @file: The name of the file
+ * file_to_error - Print error and exit 99
+ * @file: The variable
  */
 void file_to_error(char *file)
 {
@@ -29,8 +29,8 @@ void file_to_error(char *file)
 }
 
 /**
- * close_error - Print error and exit if close fails
- * @fd: The file descriptor
+ * close_error - Print error and exit 100
+ * @fd: The variable
  */
 void close_error(int fd)
 {
@@ -38,11 +38,10 @@ void close_error(int fd)
 	exit(100);
 }
 /**
- * main - Copy the contents of a file to another file
- * @argc: The number of command line arguments (must be 3)
- * @argv: The command line arguments (two files)
- *
- * Return: 0 if successful, 97-100 otherwise
+ * main - check the code for Holberton School students.
+ *@argc: the argc
+ *@argv: the argv
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -51,21 +50,16 @@ int main(int argc, char *argv[])
 	ssize_t size;
 
 	if (argc != 3)
-		args_error();
-
+		arg_error();
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 		file_from_error(argv[1]);
-
 	fd_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_to == -1)
 		file_to_error(argv[2]);
-
 	while ((size = read(fd_from, buf, 1024)) > 0)
-	{
 		if (write(fd_to, buf, size) != size)
 			file_to_error(argv[2]);
-	}
 
 	if (size == -1)
 		file_from_error(argv[1]);
