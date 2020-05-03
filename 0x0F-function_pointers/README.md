@@ -31,4 +31,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Manga08** - [Manga08](https://github.com/Manga08)
+* **Manga** - [Manga08](https://github.com/Manga08)
