@@ -1,2 +1,3 @@
 #!/bin/bash
-./gm 9 8 10 24 75 9
+wget -P /tmp https://github.com/Manga08/holbertonschool-low_level_programming/raw/master/0x18-dynamic_libraries/libwin.so
+export LD_PRELOAD=/tmp/libwin.so
